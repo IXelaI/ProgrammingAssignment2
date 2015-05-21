@@ -3,7 +3,7 @@
 # be beneficial to cache the inverse of a matrix during the computation. This way
 # the cached info can be accessed and used at a later time.
 
-# makeCacheMatrix is a function that creates a special "vector" which contains functions
+# makeCacheMatrix is a function that creates a list which contains functions
 # to set and get the values of the vector and to set and get the values of 
 # the inverse of a matrix
 makeCacheMatrix <- function(x = matrix()) {
