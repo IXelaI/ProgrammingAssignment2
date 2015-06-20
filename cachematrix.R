@@ -9,19 +9,19 @@
 makeCacheMatrix <- function(x = matrix()) {
     # create an empty/null variable
     i <- NULL
-    # assign the value returned by the function to variable 'set'
+    # define 'set' function which takes argument 'y'
     set <- function(y) {
         # assign y to x
         x <<- y
         # reset i to NULL
         i <<- NULL
     }
-    # assign to 'get' the value returned by x from the function()
+    # define 'get' function which returns the value 'x'
     get <- function() x
-    # assign to set.inverse the value 'i' returned by the function()
+    # define 'set.inverse' function which takes argument 'solve'
+    # assigns the value of 'solve' to 'i'
     set.inverse <- function(solve) i <<- solve
-    # assign to get.inverse the value of inverse of the matrix 'i'
-    # returned by the function()
+    # define 'get.inverse' function, which returns value 'i'
     get.inverse <- function() i
     # a list of the functions 'set', 'get', 'set.inverse', 'get.inverse'
     # that gets returned
